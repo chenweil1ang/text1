@@ -1,0 +1,12 @@
+PdfMultiPageView QML Type
+    属性：
+    backEnabled : bool :此属性指示是否可以在导航历史记录中返回到以前查看的页面。
+    currentPageRenderingStatus : int :此属性保存当前页的呈现状态
+    searchModel : PdfSearchModel :包含一个 PdfSearchModel，其中包含给定 searchString 的搜索结果列表。
+    方法：
+    void back():将视图滚动回用户最近访问的上一页; 如果导航堆栈上没有上一个位置，则不执行任何操作。
+    void copySelectionToClipboard() :将选定的文本(如果有)复制到系统剪贴板
+    void forward() :将视图滚动到调用 back ()方法时用户正在查看的页面; 或者，如果导航堆栈上没有“下一个”位置，则不执行任何操作。
+
+
+PdfSearchModel 提供了在文档中搜索文本字符串并获取每个页面上匹配项的几何位置的能力。
